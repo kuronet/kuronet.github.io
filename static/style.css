@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url('product-sans.woff2') format('woff2'),
+         url('product-sans.woff') format('woff');
+    font-weight: 400; /* Atur berat font */
+    font-style: normal; /* Atur gaya font */
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('gambar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+}
+
+h2 {
+    color: #e8eee2; /* Warna biru Google */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700; /* Atur tebal font */
+    text-shadow: 0 1px 2px rgb(15, 14, 14); /* Menambahkan sedikit bayangan teks */
+    letter-spacing: 0.5px; /* Atur jarak antar huruf */
+    font-family: 'Product Sans', Arial, sans-serif; /* Menggunakan font Product Sans yang mirip dengan font Google */
+}
+
+
+.search-container {
+    text-align: center; /* Koreksi: Merubah "text-alig n:center" menjadi "text-align: center;" */
+}
+
+    button {
+        padding: 15px 20px;
+        background-color: #36a0e7;
+        color: white;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 1.2em;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    button i {
+        font-size: 1.5em; /* Menentukan ukuran ikon pesawat kertas */
+    }
+    
+    button:hover {
+        background-color: #2980b9;
+        transform: scale(1.05);
+    }
+
+    .input-container {
+        display: flex;
+        width: 60%;
+        max-width: 1000px;
+    }
+    
+    input[type="text"] {
+        flex-grow: 1;
+        padding: 15px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-size: 1.4em;
+        box-sizing: border-box;
+    }
+
+    input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
